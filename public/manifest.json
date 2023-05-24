@@ -1,0 +1,20 @@
+{
+  "name": "Text to Calendar",
+  "version": "1.0",
+  "description": "Create a new event in google calendar from any text using chatGPT API and google calendar API.",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Easy Google Events From Text.",
+    "default_popup": "popup.html",
+    "default_icon": "favicon-32x32.png"
+  },
+  "oauth2": {
+    "client_id": "%GOOGLE_CLIENT_ID%",
+    "scopes": [
+      "https://www.googleapis.com/auth/calendar",
+      "https://www.googleapis.com/auth/calendar.events"
+    ]
+  },
+  "permissions": ["identity"],
+  "key": "%GOOGLE_EXTENSION_KEY%"
+}
